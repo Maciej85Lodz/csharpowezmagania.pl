@@ -15,3 +15,4 @@ namespace TypyDanych_Zajmowana_pamięc
         }
     }
 }
+
