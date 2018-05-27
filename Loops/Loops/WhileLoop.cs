@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConditionalStatements
+namespace Loops
 {
-    class Program
+    class WhileLoop
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

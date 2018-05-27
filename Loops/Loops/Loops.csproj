@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8C49C133-CC4C-4675-8905-FA699D6724F1}</ProjectGuid>
+    <ProjectGuid>{32B5AEAF-A69E-4378-B7FD-479E9FA7D681}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>ConditionalStatements</RootNamespace>
-    <AssemblyName>ConditionalStatements</AssemblyName>
+    <RootNamespace>Loops</RootNamespace>
+    <AssemblyName>Loops</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="WhileLoop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
