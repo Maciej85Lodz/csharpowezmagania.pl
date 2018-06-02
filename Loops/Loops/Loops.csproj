@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CommandBreak.cs" />
+    <Compile Include="CommandContinue.cs" />
+    <Compile Include="DoWhileLoop.cs" />
+    <Compile Include="ForLoop.cs" />
+    <Compile Include="NestingLoops.cs" />
     <Compile Include="WhileLoop.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

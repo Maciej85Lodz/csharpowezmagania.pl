@@ -8,9 +8,21 @@ namespace Loops
 {
     class WhileLoop
     {
-        static void Main(string[] args)
+        /*(while(warunek)
         {
-
+            przykladowe_polecenie();
+        }
+        */
+    static void Main(string[] args)
+        {
+            int a = 1;
+            while (a <= 9)
+            {
+                Console.WriteLine("Liczba to: {0}", a);
+                // Operator inkrementacji, wartość zostaje zwiększona o jeden
+                a++;
+            }
+            Console.ReadKey();
         }
     }
 }
