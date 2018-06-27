@@ -17,25 +17,34 @@ namespace SimpleSyntax
         }
         class Prostokat
         {
-            int lengthSideA; //parametr określający długość jednego z boków
-            int lengthSideB; //parametr określający długość drugiego z boków
+            private double lengthSideA; //parametr określający długość jednego z boków
+            private double lengthSideB; //parametr określający długość drugiego z boków
+            
 
+            
             //Metoda powalająca na wprowadzanie wartości boków prostokąta
 
             public void SetSides()
             {
                 //metoda która podaje nam wartości boków prostokata
-                lengthSideA = 5;
-                lengthSideB = 8;
+                private lengthSideA = 5;
+                private lengthSideB = 8;
 
             }
-            public int Circuit()
+            public void TakeData()
+            {
+                Console.WriteLine("Podaj szerokość: ");
+                lengthSideA = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Podaj wysokość: ");
+                lengthSideB = Convert.ToDouble(Console.ReadLine());
+            }
+            double Circuit()
             {
                 //obliczanie obwodu prostokata
                 return (2 * lengthSideA) + (2 * lengthSideB);
             }
 
-            public int SurfaceArea()
+            private double SurfaceArea()
             // Obliczanie Pola Prostokata
             {
                 return lengthSideA * lengthSideB;
