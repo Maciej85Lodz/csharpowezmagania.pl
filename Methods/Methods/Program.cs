@@ -18,6 +18,15 @@ namespace Methods
             score_comarision = wbl.FindMax(a, b);
             Console.WriteLine("Greater number is: {0}", score_comarision);
             Console.ReadKey();
+        }
+
+        public void Recursion (string [] args)
+        {
+            Factorial fc = new Factorial();
+            Console.Write("Factorial of number 6 to : {0}", fc.ComputeFactorial(6));
+            Console.ReadKey();
+            // The result of the program
+            // Factorial of number  6 to : 720
 
         }
     }
