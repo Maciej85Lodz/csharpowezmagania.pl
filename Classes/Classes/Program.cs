@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Classes
+namespace Klasy
 {
     class Program
     {
@@ -13,37 +8,50 @@ namespace Classes
             Crate crate1 = new Crate(); // definition of object1 a type Crate 
             Crate crate2 = new Crate(); // definition of object2 a type Crate
             // object1 attributes
-            crate1.length = 7.2;
-            crate1.height = 5.6;
-            crate1.width = 4.8;
+            crate1.SetLength(7.5);
+            crate1.SetHeight(5.0);
+            crate1.SetWidth(3.2);
             // object2 attributes
-            crate2.length = 4.2;
-            crate2.height = 5.8;
-            crate2.width = 3.6;
+            crate2.SetLength(6.5);
+            crate2.SetHeight(3.4);
+            crate2.SetWidth(7.2);
             // capacity of object1
-            double cap1 = crate1.CalculateCapacity(crate1.length, crate1.height, crate1.width);
+            double cap1 = crate1.CalculateCapacity();
             Console.WriteLine("Capacity of Crate1 is: {0}", cap1);
-            // capacity of object1
-            // Calculating the capacity of object2 without above method
-            double cap2 = crate2.length * crate2.height * crate2.width;
+            // capacity of object2
+            double cap2 = crate2.CalculateCapacity();
             Console.WriteLine("Capacity of Crate2 is: {0}", cap2);
+
             Console.ReadKey();
             // Program results
-            //Capacity of Crate1 is: 193,536
-            //Capacity of Crate2 is: 87,696
-
+            //Capacity of Crate1 is: 120
+            //Capacity of Crate2 is: 159,12
         }
-        class Crate
+    }
+    class Crate
+    {
+        public double length; // field available only from the inside of the class
+        public double height; // field available only from the inside of the class
+        public double width; // field available only from the inside of the class
+        // define methods that have access to these fields and are public
+        public void SetLength(double len)
         {
-            public double length;
-            public double height;
-            public double width;
-            // Method to calculate the capacity define as part of the class
-            public double CalculateCapacity(double len, double hei, double wid)
-            {
-                return len * hei * wid;
-            }
+            length = len;
         }
-
+        public void SetHeight(double hei)
+        {
+            height = hei;
+        }
+        public void SetWidth(double wid)
+        {
+            width = wid;
+        }
+        // Method for calculating capacity in a different form than in the first example
+        // Class members have their values ​​already, we can calculate the volume
+        public double CalculateCapacity()
+        {
+            return length * height * width;
+        }
     }
 }
+
