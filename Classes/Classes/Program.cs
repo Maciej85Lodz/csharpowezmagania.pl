@@ -1,5 +1,6 @@
-﻿using System;
-namespace Klasy
+﻿using Classes;
+using System;
+namespace Classes
 {
     class Program
     {
@@ -51,6 +52,20 @@ namespace Klasy
         public double CalculateCapacity()
         {
             return length * height * width;
+        }
+        static void Constr()
+        {
+            WithConstr wc = new WithConstr();
+            Console.ReadKey();
+        }
+        static void ConstrParam()
+        {
+            string brand = "";
+            Console.Write("Please provide the car brand:  ");
+            brand = Console.ReadLine();
+            ConstrParam cp = new ConstrParam(brand);
+            Console.ReadKey();
+
         }
     }
 }
