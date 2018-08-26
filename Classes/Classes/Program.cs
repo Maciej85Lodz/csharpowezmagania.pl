@@ -53,18 +53,56 @@ namespace Classes
         {
             return length * height * width;
         }
-        static void Constr()
+        public void Constr()
         {
             WithConstr wc = new WithConstr();
             Console.ReadKey();
         }
-        static void ConstrParam()
+        public void ConstrParam()
         {
             string brand = "";
             Console.Write("Please provide the car brand:  ");
             brand = Console.ReadLine();
             ConstrParam cp = new ConstrParam(brand);
             Console.ReadKey();
+
+        }
+        public void DeConstr()
+        {
+            WithDestructor wd = new WithDestructor();
+            Console.ReadKey();
+        }
+        public void StatComp()
+        {
+            StatsComp sc1 = new StatsComp();
+            sc1.Add();
+            sc1.Add();
+            sc1.Add();
+            // Now we will create another StatsComp  type object
+            StatsComp sc2 = new StatsComp();
+            // Remember that we have only one copy of the static variable
+            sc2.Add();
+            sc2.Add();
+            sc2.Add();
+            Console.WriteLine("The value of the number from the first object: {0}", sc1.DisplayNumber());
+            Console.WriteLine("The value of the number from the second object: {0}", sc2.DisplayNumber());
+            Console.ReadKey();
+            // If the result is surprising to you, read again definition of static components
+            // Result of the program
+            // The value of the number from the first object: 6
+            // The value of the number from the second object: 6
+        }
+        public void StatMeth()
+        {
+            StatsMeth sm = new StatsMeth();
+            sm.Add();
+            sm.Add();
+            sm.Add();
+            // Static method is available without the class object creation
+            Console.WriteLine("The value of the number: {0}", StatsMeth.ReturnNumber());
+            Console.ReadKey();
+            // Wynik działania programu
+            //Wartosc liczby: 3
 
         }
     }
