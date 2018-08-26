@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConstrParam.cs" />
+    <Compile Include="MathematicalOperations.cs" />
     <Compile Include="StatsComp.cs" />
     <Compile Include="StatsMeth.cs" />
     <Compile Include="WithConstr.cs" />

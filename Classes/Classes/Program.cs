@@ -101,8 +101,8 @@ namespace Classes
             // Static method is available without the class object creation
             Console.WriteLine("The value of the number: {0}", StatsMeth.ReturnNumber());
             Console.ReadKey();
-            // Wynik działania programu
-            //Wartosc liczby: 3
+            // Result of the program
+            // The value of the number: 3
 
         }
     }
