@@ -43,9 +43,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConstrParam.cs" />
+    <Compile Include="MathematicalOperations.cs" />
+    <Compile Include="StatsComp.cs" />
+    <Compile Include="StatsMeth.cs" />
     <Compile Include="WithConstr.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WithDestructor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
