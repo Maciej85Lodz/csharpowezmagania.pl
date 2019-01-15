@@ -34,5 +34,25 @@ namespace PolymorphismOverloadingOperators
             return pud;
 
         }
+        // Przeciążenie operatora ==
+        public static bool operator ==(Box a, Box b)
+        {
+            bool status = false;
+            if (a.length == b.length && a.width == b.width && a.height == b.height)
+                status = true;
+            return status;
+        }
+        // Przeciążenie operatora !=
+        public static bool operator !=(Box a, Box b)
+        {
+            bool status = false;
+            if (a.length != b.length || a.width != b.width || a.height != b.height)
+                status = true;
+            return status;
+        }
+        public override string ToString()
+        {
+            return String.Format("({0}, {1}, {2})", length, width, height);
+        }
     }
 }
