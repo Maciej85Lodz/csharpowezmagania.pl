@@ -10,7 +10,7 @@ namespace Interfaces
         private string data;
         private int quantity;
 
-        public DataTransactions(string k, string d, int i)
+        public DataTransactions(string k, string d, int j)
         {
             code = "";
             data = "";
@@ -18,10 +18,10 @@ namespace Interfaces
 
             code = k;
             data = d;
-            quantity = i;
+            quantity = j;
         }
 
-        public int CalculateQuantity()
+        public int CalculateQuantities()
         {
             return quantity;
         }

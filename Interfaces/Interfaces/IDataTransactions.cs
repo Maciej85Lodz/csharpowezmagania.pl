@@ -4,6 +4,6 @@
     {
         // składowe interfejsu
         void DisplayData();
-        int CalculateQuantity();
+        int CalculateQuantities();
     }
 }
