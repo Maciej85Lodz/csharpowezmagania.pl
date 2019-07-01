@@ -1,15 +1,21 @@
-﻿#define MyVariable;
+﻿#define DEBUG 
+#define VERSION1 
 using System;
 namespace Directive {
-    class Program {
+    class Program
+    {
         static void Main(string[] args)
         {
-            #if (MyVariable)
-                        Console.WriteLine("Variable is defined");
-            #else
-                        Console.WriteLine("Variable is not defined"); 
-            #endif
-                         Console.ReadKey(); 
+        #if (DEBUG && !VERSION1)
+                    Console.WriteLine("DEBUG is defined); "+
+        "#elif (!DEBUG && VERSION1) "+
+        "Console.WriteLine("VERSION1 is defined); 
+        #elif (DEBUG && VERSION1)
+                    Console.WriteLine("DEBUG with VERSION1 are defined");
+        #else
+                    Console.WriteLine("DEBUG with VERSION1 aren't defined");
+        #endif
+            Console.ReadKey(); 
         }
     }
 }
