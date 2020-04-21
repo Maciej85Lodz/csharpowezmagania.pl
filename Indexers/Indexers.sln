@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indexers", "Indexers.csproj", "{031528F8-74A1-40E3-9ABF-942BBBBC2B1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverloadedIndexers", "..\OverloadedIndexers\OverloadedIndexers.csproj", "{655E94B4-E41E-4A82-BAFE-DC6C1E85455D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{031528F8-74A1-40E3-9ABF-942BBBBC2B1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031528F8-74A1-40E3-9ABF-942BBBBC2B1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031528F8-74A1-40E3-9ABF-942BBBBC2B1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031528F8-74A1-40E3-9ABF-942BBBBC2B1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655E94B4-E41E-4A82-BAFE-DC6C1E85455D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655E94B4-E41E-4A82-BAFE-DC6C1E85455D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655E94B4-E41E-4A82-BAFE-DC6C1E85455D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655E94B4-E41E-4A82-BAFE-DC6C1E85455D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49217C98-44A3-4310-B0B3-296CC4A6E802}
+	EndGlobalSection
+EndGlobal
